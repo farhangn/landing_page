@@ -5,6 +5,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* 
+- This portion of the css designs the heading of the landing page
+- The top portion contains a logo (left) and some links (right)
+- The bottom portion contains a description of the website a 
+button for signing up for updates (left) and a photo (right)
+*/
+
 .header {
     background: #1f2937;
     padding-top: 10px;
@@ -13,7 +21,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.top {
+
+/*top of the header*/
+
+.header-top {
     display: flex;
     min-width: 60%;
     justify-content: space-between;
@@ -21,12 +32,15 @@ body {
     flex-basis: 0;
     gap: 10%;
 }
-.logo {
+.header-logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: 600;
 }
-.bottom {
+
+/*bottom of the header*/
+
+.header-bottom {
     display: flex;
     min-width: 60%;
     flex-basis: 0;
@@ -34,21 +48,21 @@ body {
     padding-bottom: 60px;
     gap: 10%;
 }
-.left {
+.header-text {
     flex: 1 1 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.title {
+.header-title {
     font-size: 48px;
     color: #f9faf8;
 }
-.subtext {
+.header-subtext {
     font-size: 18px;
     color: #e5e7eb;
 }
-.right {
+.header-photo {
     flex: 1 1 0px;
     display: flex;
     justify-content: center;
@@ -56,17 +70,28 @@ body {
     background: gray;
     color: white;
 }
+
+/* 
+- This portion of the css designs the body of the landing page
+- The top portion contains some information and some photos or illustrations
+- The middle portion contains a testimonial from visitors of the website
+- The bottom portion contains another reminder to sign up for updates
+*/
+
 .body {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-.content {
+
+/*top of the body*/
+
+.body-top {
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
 }
-.info {
+.body-info {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -75,29 +100,32 @@ body {
     color: #1f2937;
     font-weight: bold;
 }
-.cards {
+.body-imagebox {
     display: flex;
     justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
 }
-.image {
+.body-image {
     height: 150px;
     width: 150px;
     border: solid 2px #3882f6;
     border-radius: 8px;
 }
-.text {
+.body-imagetext {
     width: 150px;
     text-align: center;
 }
-.testimonial {
+
+/*middle of the body*/
+
+.body-middle {
     background: #e5e7eb;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.quote {
+.testimonial-quote {
     display: flex;
     justify-content: flex-start;
     max-width: 60%;
@@ -105,7 +133,7 @@ body {
     font-size: 36px;
     font-style: italic;
 }
-.author {
+.testimonial-author {
     display: flex;
     min-width: 60%;
     padding: 60px 0;
@@ -113,7 +141,10 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
-.signbox {
+
+/*bottom of the body*/
+
+.body-bottom {
     flex: 1;
     background: #3882f6;
     display: flex;
@@ -124,24 +155,28 @@ body {
     border-radius: 8px;
     gap: 10px;
 }
-.action {
+.call-action {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.call {
+.call-title {
     font-size: 24px;
     color: white;
     font-weight: bold;
 }
-.message {
+.call-subtext {
     font-size: 18px;
     color: white;
 }
-.bottombutton {
+.call-button {
     border: solid white 1px;
     font-size: 15px;
 }
+
+/*This section of the css designs the footer of the page that contains
+some copyright information*/
+
 .footer {
     background: #1f2937;
     color: white;
@@ -149,6 +184,9 @@ body {
     justify-content: center;
     padding: 5px 0;
 }
+
+/*This section of the css designs the list, links and buttons*/
+
 ul {
     list-style-type: none;
     font-size: 18px;
