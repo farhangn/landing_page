@@ -53,6 +53,7 @@ button for signing up for updates (left) and a photo (right)
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 .header-title {
     font-size: 48px;
@@ -63,7 +64,10 @@ button for signing up for updates (left) and a photo (right)
     color: #e5e7eb;
 }
 .header-photo {
-    flex: 1 1 0px;
+    width: 500px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
